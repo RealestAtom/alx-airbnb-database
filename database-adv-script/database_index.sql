@@ -13,3 +13,20 @@ CREATE INDEX idx_properties_name ON properties(name);
 -- Create index on property_id column in reviews table to improve joins
 CREATE INDEX idx_reviews_property_id ON reviews(property_id);
 
+
+-- ===========================================
+-- PERFORMANCE TESTS (Before and After Indexes)
+-- ===========================================
+
+-- Check performance of a query before indexing (for example)
+EXPLAIN ANALYZE
+SELECT * FROM bookings WHERE user_id = 3;
+
+-- Check performance of a query after creating indexes
+EXPLAIN ANALYZE
+SELECT * FROM properties WHERE name LIKE '%Beach%';
+
+-- Another performance example
+EXPLAIN ANALYZE
+SELECT * FROM reviews WHERE property_id = 10;
+
