@@ -20,4 +20,15 @@ This project demonstrates the use of correlated and non-correlated subqueries on
 
 ## File
 - `subqueries.sql`: Contains all subquery SQL queries.
+# SQL Aggregations and Window Functions
+
+This project demonstrates the use of SQL aggregation and window functions to analyze Airbnb data.
+
+## Queries
+
+1. **Aggregation (COUNT + GROUP BY)** – Finds the total number of bookings made by each user.
+2. **Window Function (RANK)** – Ranks properties based on the total number of bookings received.
+
+## File
+- `aggregations_and_window_functions.sql`: Contains all SQL queries for aggregation and ranking.
 
